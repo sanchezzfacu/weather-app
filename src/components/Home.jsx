@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Card from './Card'
 import axios from 'axios';
-
+import '../css/Home.css'
 
 function Home() {
     // eslint-disable-next-line
@@ -18,15 +18,16 @@ function Home() {
         e.preventDefault()
         let json = await axios.get(url)
         let finalInfo = json.data
-        let total = []
+        let total = [...info]
         total.push(finalInfo)
         setInfo(total)
     }
     
     return (
-        <div>
+        <div className='home-container'>
             <form onSubmit={handleSearch}>
                 <input
+                    placeholder="Buscar ciudad..."
                     onChange={handleInput}
                     type='text'
                     />

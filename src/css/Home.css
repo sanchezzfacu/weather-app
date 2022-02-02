@@ -1,0 +1,42 @@
+input {
+  position: relative;
+  width: 300px;
+  outline: none;
+  border: #ffff;
+  background-color: #222222;
+  box-sizing: border-box;
+  height: 35px;
+  border-radius: 10px  0px 0px 10px;
+  caret-color: #ffffff;
+  caret-color: 20px;
+  color: #ffffff;
+  padding-left: 10px;
+  border: 2px solid #ffffff; }
+
+form {
+  padding-top: 20px;
+  padding-bottom: 50px; }
+  form button {
+    border-radius: 0px 10px 10px 0px;
+    height: 35px;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #222222;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-left: none; }
+
+::placeholder {
+  padding-left: 2px; }
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: #222222; }
+
+.home-container {
+  width: 100%; }
+
+/*# sourceMappingURL=Home.css.map */
